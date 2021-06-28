@@ -1,12 +1,13 @@
 from django import forms
-from .models import register
+from .models import Register
+
+
 class Userforms(forms.ModelForm):
-    class Meta:   
-        model =  register
+    class Meta:
+        model = Register
         fields = [
-            'name',
-            'email',
-            'password',
-            'remember_this_credentials',
-        ] 
-        
+            "name",
+            "email",
+            "password",
+            "remember_this_credentials",
+        ]
